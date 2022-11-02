@@ -1,5 +1,6 @@
 import random
 
+import sys
 
 def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwargs):
     print("Starting Evaluation.....")
@@ -54,6 +55,8 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         ]
         # To display the results in the result file
         output["submission_result"] = output["result"][0]["train_split"]
+        sys.stdout.write("This is SYS STDOUT WRITE")
+        sys.stdout.flush()
         print("Completed evaluation for Dev Phase")
     elif phase_codename == "test":
         print("Evaluating for Test Phase")
