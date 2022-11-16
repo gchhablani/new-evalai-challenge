@@ -61,10 +61,6 @@ challenge_phases:
         description: Sample
         type: text
         required: False
-      - name: SingleOptionAttribute
-        description: Sample
-        type: radio
-        options: ["A", "B", "C"]
       - name: MultipleChoiceAttribute
         description: Sample
         type: checkbox
